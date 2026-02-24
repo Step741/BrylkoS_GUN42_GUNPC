@@ -20,31 +20,26 @@
 
         Console.WriteLine("Enter the operator: & | or ^");
 
-        var s = Console.ReadLine();
-        var boolVar = true;
+        var sign = Console.ReadLine();
 
-        if (s.Length == 0 || s.Length > 1 && !boolVar)
+        if (sign.Length == 0 || sign.Length > 1)
         {
             Console.WriteLine("Error!");
             return;
         }
 
-        switch (s[0])
+        var result = 0;
+
+        switch (sign[0])
         {
             case '&':
-                Console.WriteLine(a & b);
-                Console.WriteLine(Convert.ToString(a & b,2));
-                Console.WriteLine(Convert.ToString(a & b,16));
+                result = a & b;
                 break;
             case '|':
-                Console.WriteLine(a | b);
-                Console.WriteLine(Convert.ToString(a | b,2));
-                Console.WriteLine(Convert.ToString(a | b,16));
+                result = a | b;
                 break;
             case '^':
-                Console.WriteLine(a ^ b);
-                Console.WriteLine(Convert.ToString(a ^ b,2));
-                Console.WriteLine(Convert.ToString(a ^ b,16));
+                result = a ^ b;
                 break;
             default:
                 Console.WriteLine("Error!");
@@ -70,5 +65,9 @@
                 //    default: Console.WriteLine("Error!");
                 //        break;
         }
+
+        Console.WriteLine(result);
+        Console.WriteLine(Convert.ToString(result,2));
+        Console.WriteLine(Convert.ToString(result,16));
     }
 }
