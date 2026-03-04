@@ -1,30 +1,35 @@
-﻿namespace HomeWork
+﻿using System.Data.Common;
+
+namespace HomeWork
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             //Задание 1
-            int[] fNumbers = new int[10] { 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 };
+            Console.WriteLine("The first 10 Fibonacci numbers");
+            int a = 0;
+            int b = 1;
+            Console.Write(a + " " + b + " ");
 
-            for (int index = 0; index < fNumbers.Length; index++)
+            for (int index = 2; index < 10; index++)
             {
-                Console.WriteLine(fNumbers[index]);
+                int next = a + b;
+                Console.Write(next + " ");
+                a = b;
+                b = next;
             };
 
             //Задание 2
-            int[] numbers = new int[20] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
+            Console.WriteLine("\nEven numbers from 1 to 20");
 
-            for (int index = 0; index < numbers.Length; index++)
+            for (int index = 2; index <= 20; index +=2)
             {
-                if (index % 2 == 0)
-                {
-                    continue;
-                }
-                Console.WriteLine(numbers[index]);
+                Console.Write(index + " ");
             };
 
-            //Задание 3
+            //Задание 3]
+            Console.WriteLine("\nMultiplication table from 1 to 5");
             for (int line = 1; line <= 5; line++)
             {
                 for (int column = 1; column <= 5; column++)
@@ -36,6 +41,7 @@
             };
 
             //Задание 4
+            Console.WriteLine("\nPassword entry program");
             string password = "qwerty";
             string input;
 
