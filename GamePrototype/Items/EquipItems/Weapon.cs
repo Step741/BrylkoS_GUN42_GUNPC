@@ -9,5 +9,12 @@ namespace GamePrototype.Items.EquipItems
         public uint Damage { get; }
 
         public override EquipSlot Slot => EquipSlot.Weapon;
+
+        //Задание 1 - Добавил Repair для оружия
+        public void Repair(uint value)
+        {
+            Durability += value;
+        }
     }
+
 }

@@ -22,11 +22,40 @@ namespace GamePrototype.Game
 
         private void Initialize()
         {
+            //Задание 3 - Выбор сложности
             Console.WriteLine("Welcome, player!");
-            _dungeon = DungeonBuilder.BuildDungeon();
+            Console.WriteLine("Select difficulty: Easy / Hard");
+
+            Difficulty difficulty =
+                Enum.Parse<Difficulty>(Console.ReadLine(), true);
+
+            UnitFactory factory;
+
+            if (difficulty == Difficulty.Easy)
+            {
+                factory = new EasyUnitFactory();
+            }
+            else
+            {
+                factory = new HardUnitFactory();
+            }
+
+            DungeonBuilder builder;
+
+            if (difficulty == Difficulty.Easy)
+            {
+                builder = new EasyDungeonBuilder(factory);
+            }
+            else
+            {
+                builder = new HardDungeonBuilder(factory);
+            }
+
+            _dungeon = builder.BuildDungeon();
+
             Console.WriteLine("Enter your name");
-            _player = UnitFactoryDemo.CreatePlayer(Console.ReadLine());
-            Console.WriteLine($"Hello {_player.Name}");
+
+            _player = factory.CreatePlayer(Console.ReadLine());
         }
 
         private void StartGameLoop()
