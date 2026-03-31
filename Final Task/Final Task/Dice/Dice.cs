@@ -14,8 +14,7 @@
         {
             if (min < 1 || max > int.MaxValue || min > max)
             {
-                throw new WrongDiceNumberException(
-                    $"Wrong dice values {min}-{max}");
+                throw new WrongDiceNumberException($"Wrong dice values {min}-{max}");
             }
 
             Min = min;
