@@ -1,4 +1,4 @@
-﻿namespace Final_Task.Dice
+﻿namespace Final_Task.GameDice
 {
     public struct Dice
     {

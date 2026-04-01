@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\games\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\games\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\games\\dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\games\\dicegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\profile\\playerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\profile\\playerprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\gamedice\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\gamedice\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\gamedice\\wrongdicenumberexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\gamedice\\wrongdicenumberexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\cards\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\dice\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\dice\\dice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|c:\\users\\rokke\\desktop\\brylkos_gun42_gunpc\\final task\\final task\\games\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18CBFCE4-EAFB-F597-570D-5C19CDCF8160}|Final Task\\Final Task.csproj|solutionrelative:final task\\games\\blackjackgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +38,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WrongDiceNumberException.cs",
+              "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\GameDice\\WrongDiceNumberException.cs",
+              "RelativeDocumentMoniker": "Final Task\\GameDice\\WrongDiceNumberException.cs",
+              "ToolTip": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\GameDice\\WrongDiceNumberException.cs",
+              "RelativeToolTip": "Final Task\\GameDice\\WrongDiceNumberException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:29:17.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dice.cs",
+              "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\GameDice\\Dice.cs",
+              "RelativeDocumentMoniker": "Final Task\\GameDice\\Dice.cs",
+              "ToolTip": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\GameDice\\Dice.cs",
+              "RelativeToolTip": "Final Task\\GameDice\\Dice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:28:23.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerProfile.cs",
+              "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Profile\\PlayerProfile.cs",
+              "RelativeDocumentMoniker": "Final Task\\Profile\\PlayerProfile.cs",
+              "ToolTip": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Profile\\PlayerProfile.cs",
+              "RelativeToolTip": "Final Task\\Profile\\PlayerProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T10:03:34.426Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DiceGame.cs",
+              "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Games\\DiceGame.cs",
+              "RelativeDocumentMoniker": "Final Task\\Games\\DiceGame.cs",
+              "ToolTip": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Games\\DiceGame.cs",
+              "RelativeToolTip": "Final Task\\Games\\DiceGame.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwBMAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T09:51:54.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BlackJackGame.cs",
               "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Games\\BlackJackGame.cs",
               "RelativeDocumentMoniker": "Final Task\\Games\\BlackJackGame.cs",
@@ -38,29 +103,11 @@
               "RelativeToolTip": "Final Task\\Games\\BlackJackGame.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwDYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T06:22:20.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T06:22:20.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dice.cs",
-              "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Dice\\Dice.cs",
-              "RelativeDocumentMoniker": "Final Task\\Dice\\Dice.cs",
-              "ToolTip": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Dice\\Dice.cs",
-              "RelativeToolTip": "Final Task\\Dice\\Dice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T11:33:29.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Card.cs",
               "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Cards\\Card.cs",
               "RelativeDocumentMoniker": "Final Task\\Cards\\Card.cs",
@@ -68,12 +115,11 @@
               "RelativeToolTip": "Final Task\\Cards\\Card.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T11:33:01.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T11:33:01.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rokke\\Desktop\\BrylkoS_GUN42_GUNPC\\Final Task\\Final Task\\Program.cs",
               "RelativeDocumentMoniker": "Final Task\\Program.cs",
