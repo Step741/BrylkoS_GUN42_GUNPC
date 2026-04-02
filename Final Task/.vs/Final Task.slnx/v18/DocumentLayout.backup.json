@@ -38,8 +38,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -50,8 +54,7 @@
               "RelativeToolTip": "Final Task\\GameDice\\WrongDiceNumberException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:29:17.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T10:29:17.934Z"
             },
             {
               "$type": "Document",
@@ -63,8 +66,7 @@
               "RelativeToolTip": "Final Task\\GameDice\\Dice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:28:23.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T10:28:23.126Z"
             },
             {
               "$type": "Document",
@@ -76,8 +78,7 @@
               "RelativeToolTip": "Final Task\\Profile\\PlayerProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T10:03:34.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-01T10:03:34.426Z"
             },
             {
               "$type": "Document",
@@ -93,10 +94,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "BlackJackGame.cs",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Final Task\\Games\\BlackJackGame.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAIwDYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T06:22:20.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T06:22:20.325Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "Final Task\\Cards\\Card.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T11:33:01.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T11:33:01.513Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Final Task\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T11:05:26.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T11:05:26.84Z"
             }
           ]
         }
