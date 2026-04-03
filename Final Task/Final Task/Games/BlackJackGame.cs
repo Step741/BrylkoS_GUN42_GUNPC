@@ -1,4 +1,8 @@
 ﻿using Final_Task.Cards;
+using Final_Task.Games;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Final_Task.Games
 {
@@ -6,7 +10,9 @@ namespace Final_Task.Games
     {
         private Queue<Card> Deck;
 
-        private List<Card> _cards;
+        private List<Card> _playerCards;
+
+        private List<Card> _enemyCards;
 
         private int _cardCount;
 
@@ -18,70 +24,79 @@ namespace Final_Task.Games
                 throw new ArgumentException("Card count must be > 0");
 
             _cardCount = cardCount;
+
+            FactoryMethod();
         }
 
         protected override void FactoryMethod()
         {
-            _cards = new List<Card>();
+            List<Card> cards = new List<Card>();
 
-            var suits = Enum.GetValues<CardSuit>();
-            var values = Enum.GetValues<CardValue>();
-
-            for (int i = 0; i < _cardCount; i++)
+            foreach (Suit suit in Enum.GetValues(typeof(Suit)))
             {
-                var suit =
-                    suits[_random.Next(suits.Length)];
-
-                var value =
-                    values[_random.Next(values.Length)];
-
-                _cards.Add(new Card(suit, value));
+                foreach (CardValue value in Enum.GetValues(typeof(CardValue)))
+                {
+                    cards.Add(new Card(suit, value));
+                }
             }
 
-            Shuffle();
+            Shuffle(cards);
         }
 
-        private void Shuffle()
+        private void Shuffle(List<Card> cards)
         {
-            Deck = new Queue<Card>(
-                _cards.OrderBy(x => _random.Next())
-            );
+            var shuffled =
+                cards.OrderBy(x => _random.Next()).ToList();
+
+            Deck =
+                new Queue<Card>(shuffled);
         }
 
         public override void PlayGame()
         {
-            var playerCards = new List<Card>();
+            _playerCards = new List<Card>();
 
-            var enemyCards = new List<Card>();
+            _enemyCards = new List<Card>();
 
-            playerCards.Add(DrawCard());
-            playerCards.Add(DrawCard());
+            DealStartCards();
 
-            enemyCards.Add(DrawCard());
-            enemyCards.Add(DrawCard());
+            GameLoop();
 
+            ShowResults();
+        }
+
+        private void DealStartCards()
+        {
+            _playerCards.Add(DrawCard());
+            _playerCards.Add(DrawCard());
+
+            _enemyCards.Add(DrawCard());
+            _enemyCards.Add(DrawCard());
+        }
+
+        private void GameLoop()
+        {
             while (true)
             {
-                int playerScore = CalculateScore(playerCards);
+                int playerScore =
+                    CalculateScore(_playerCards);
 
-                int enemyScore = CalculateScore(enemyCards);
+                int enemyScore =
+                    CalculateScore(_enemyCards);
 
-                Console.WriteLine($"Player score {playerScore}");
-
-                Console.WriteLine($"Enemy score {enemyScore}");
-
-                if (playerScore == enemyScore && playerScore < 21)
+                if (playerScore == enemyScore &&
+                   playerScore < 21)
                 {
-                    playerCards.Add(DrawCard());
+                    _playerCards.Add(DrawCard());
 
-                    enemyCards.Add(DrawCard());
+                    _enemyCards.Add(DrawCard());
 
                     continue;
                 }
 
                 if (playerScore <= 21 &&
                    (enemyScore > 21 ||
-                    playerScore > enemyScore))
+                   playerScore > enemyScore))
                 {
                     OnWinInvoke();
 
@@ -90,34 +105,99 @@ namespace Final_Task.Games
 
                 if (enemyScore <= 21 &&
                    (playerScore > 21 ||
-                    enemyScore > playerScore))
+                   enemyScore > playerScore))
                 {
                     OnLooseInvoke();
 
                     return;
                 }
 
-                OnDrawInvoke();
+                if (playerScore >= 21 &&
+                   enemyScore >= 21)
+                {
+                    OnDrawInvoke();
 
-                return;
+                    return;
+                }
+
+                break;
+            }
+        }
+
+        private int CalculateScore(List<Card> cards)
+        {
+            int score = 0;
+
+            foreach (var card in cards)
+            {
+                score += GetCardValue(card);
+            }
+
+            return score;
+        }
+
+        private int GetCardValue(Card card)
+        {
+            switch (card.Value)
+            {
+                case CardValue.Six:
+                    return 6;
+
+                case CardValue.Seven:
+                    return 7;
+
+                case CardValue.Eight:
+                    return 8;
+
+                case CardValue.Nine:
+                    return 9;
+
+                case CardValue.Ten:
+                case CardValue.Jack:
+                case CardValue.Queen:
+                case CardValue.King:
+                    return 10;
+
+                case CardValue.Ace:
+                    return 11;
+
+                default:
+                    return 0;
             }
         }
 
         private Card DrawCard()
         {
+            if (Deck.Count == 0)
+            {
+                FactoryMethod();
+            }
+
             return Deck.Dequeue();
         }
 
-        private int CalculateScore(List<Card> cards)
+        private void ShowResults()
         {
-            int sum = 0;
+            Console.WriteLine("Player cards:");
 
-            foreach (var card in cards)
+            foreach (var card in _playerCards)
             {
-                sum += (int)card.Value;
+                Console.WriteLine($"{card.Value} {card.Suit}");
             }
 
-            return sum;
+            Console.WriteLine();
+            Console.WriteLine("Enemy cards:");
+
+            foreach (var card in _enemyCards)
+            {
+                Console.WriteLine($"{card.Value} {card.Suit}");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Player score: {CalculateScore(_playerCards)}");
+
+            Console.WriteLine($"Enemy score: {CalculateScore(_enemyCards)}");
+            Console.WriteLine();
         }
     }
 }

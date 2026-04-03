@@ -3,7 +3,7 @@ using Final_Task.Games;
 using Final_Task.Profile;
 using Final_Task.SaveLoad;
 
-namespace Final_Task.CasinoNamespace
+namespace Final_Task.Casino
 {
     public class Casino : IGame
     {
@@ -51,12 +51,13 @@ namespace Final_Task.CasinoNamespace
         public void StartGame()
         {
             Console.WriteLine("Welcome to casino!");
+            Console.WriteLine();
 
             LoadProfile();
 
             if (_player.Bank <= 0)
             {
-                Console.WriteLine("No money? Go a way!");
+                Console.WriteLine("No money? Kicked!");
 
                 return;
             }
@@ -92,6 +93,7 @@ namespace Final_Task.CasinoNamespace
             Console.WriteLine($"Welcome back {_player.Name}");
 
             Console.WriteLine($"Bank {_player.Bank}");
+            Console.WriteLine();
         }
 
         private void SaveProfile()
@@ -149,6 +151,7 @@ namespace Final_Task.CasinoNamespace
         private void PlayerWin()
         {
             Console.WriteLine("You win!");
+            Console.WriteLine();
 
             _player.Bank += _bet;
 
@@ -158,6 +161,7 @@ namespace Final_Task.CasinoNamespace
         private void PlayerLose()
         {
             Console.WriteLine("You lose :(");
+            Console.WriteLine();
 
             _player.Bank -= _bet;
         }
@@ -177,16 +181,14 @@ namespace Final_Task.CasinoNamespace
                 _player.Bank =
                     MAX_BANK;
 
-                Console.WriteLine(
-                    $"You broke casino! Extra {extra}");
+                Console.WriteLine($"You broke casino! Extra {extra}");
             }
 
             if (_player.Bank > MAX_BANK)
             {
                 _player.Bank /= 2;
 
-                Console.WriteLine(
-                    "You wasted half");
+                Console.WriteLine("You wasted half of your bank money in casino’s bar");
             }
         }
     }

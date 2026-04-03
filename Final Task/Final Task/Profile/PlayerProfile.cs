@@ -9,7 +9,7 @@
         public PlayerProfile(string name)
         {
             Name = name;
-            Bank = 100;
+            Bank = 1000;
         }
 
         public override string ToString()

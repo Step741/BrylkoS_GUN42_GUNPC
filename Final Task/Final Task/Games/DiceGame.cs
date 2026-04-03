@@ -1,4 +1,7 @@
 ﻿using Final_Task.GameDice;
+using Final_Task.Games;
+using System;
+using System.Collections.Generic;
 
 namespace Final_Task.Games
 {
@@ -19,11 +22,16 @@ namespace Final_Task.Games
             if (diceCount <= 0)
                 throw new ArgumentException("Dice count must be > 0");
 
+            if (min <= 0 || max < min)
+                throw new ArgumentException("Wrong dice range");
+
             _diceCount = diceCount;
 
             _min = min;
 
             _max = max;
+
+            FactoryMethod();
         }
 
         protected override void FactoryMethod()
@@ -34,53 +42,64 @@ namespace Final_Task.Games
 
             for (int i = 0; i < _diceCount; i++)
             {
-                _playerDices.Add(new Dice(_min, _max));
+                _playerDices.Add(
+                    new Dice(_min, _max));
 
-                _enemyDices.Add(new Dice(_min, _max));
+                _enemyDices.Add(
+                    new Dice(_min, _max));
             }
         }
 
         public override void PlayGame()
         {
-            int playerSum = CalculateSum(_playerDices);
+            Console.WriteLine("===== DICE GAME =====");
 
-            int enemySum = CalculateSum(_enemyDices);
+            int playerResult =
+                RollDices(_playerDices, "Player");
 
-            Console.WriteLine($"Player result: {playerSum}");
+            int enemyResult =
+                RollDices(_enemyDices, "Enemy");
 
-            Console.WriteLine($"Enemy result: {enemySum}");
+            Console.WriteLine($"Player total: {playerResult}");
 
-            if (playerSum > enemySum)
+            Console.WriteLine($"Enemy total: {enemyResult}");
+            Console.WriteLine();
+
+            if (playerResult > enemyResult)
             {
                 OnWinInvoke();
-
-                return;
             }
-
-            if (enemySum > playerSum)
+            else if (enemyResult > playerResult)
             {
                 OnLooseInvoke();
-
-                return;
             }
-
-            OnDrawInvoke();
+            else
+            {
+                OnDrawInvoke();
+            }
         }
 
-        private int CalculateSum(List<Dice> dices)
+        private int RollDices(
+            List<Dice> dices,
+            string owner)
         {
-            int sum = 0;
+            int result = 0;
+
+            Console.WriteLine($"{owner} rolls:");
 
             foreach (var dice in dices)
             {
-                int number = dice.Number;
+                int roll =
+                    dice.Number;
 
-                Console.WriteLine($"Dice roll: {number}");
+                Console.WriteLine(roll);
 
-                sum += number;
+                result += roll;
             }
 
-            return sum;
+            Console.WriteLine();
+
+            return result;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Final_Task.Cards
 {
-    public enum CardSuit
+    public enum Suit
     {
         Diamonds,
         Hearts,

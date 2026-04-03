@@ -2,14 +2,13 @@
 {
     public struct Card
     {
-        public CardSuit Suit { get; }
+        public readonly Suit Suit;
 
-        public CardValue Value { get; }
+        public readonly CardValue Value;
 
-        public Card(CardSuit suit, CardValue value)
+        public Card(Suit suit, CardValue value)
         {
             Suit = suit;
-
             Value = value;
         }
     }

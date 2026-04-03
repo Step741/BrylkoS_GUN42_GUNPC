@@ -20,6 +20,7 @@
         protected void OnWinInvoke()
         {
             Console.WriteLine("Player wins!");
+            Console.WriteLine();
 
             OnWin?.Invoke();
         }
@@ -27,6 +28,7 @@
         protected void OnLooseInvoke()
         {
             Console.WriteLine("Player loses!");
+            Console.WriteLine();
 
             OnLoose?.Invoke();
         }
